@@ -2,12 +2,13 @@ body{
 	margin:0 auto 0 auto;
 	width:500px;
 	background-color:#FFDCA8;
-	font-size:14px;	
+	font-size:20px;	
 }
 .title
 {
 	background-color:#74DCA8;
 	width:500px;
 	height:100px;
-	font-size:20px;
+	font-size:30px;
+	text-align:center;
 }
