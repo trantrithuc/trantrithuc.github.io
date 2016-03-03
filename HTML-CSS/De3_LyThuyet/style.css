@@ -36,6 +36,7 @@ section
 	margin-bottom:20px;
 	width:100%;
 	border-top:dotted 1px #595959;
+	float:left;
 }
 .row-content
 {
@@ -69,6 +70,7 @@ section
 	background:url('images/arr_1.gif') no-repeat;
 	padding-left:20px;
 	padding-bottom:20px;
+	float:left;
 }
 .button-content a
 {
@@ -77,8 +79,7 @@ section
 }
 .link-row
 {
-	width:450px;
-	
+	width:450px;	
 	float:left;
 }
 .link-colume
@@ -103,6 +104,7 @@ section
 .img
 {
 	padding-left:15px;
+	margin-bottom:60px;
 	width:174px;
 	height:96px;
 	
@@ -111,4 +113,19 @@ section
 {
 	padding-left:15px;
 	padding-bottom:30px;
+	float:left;
+}
+.title-row
+{
+	margin-bottom:10px;
+	
+}
+.special-row
+{
+	margin-top:10px;
+}
+.content-sidebar-right a
+{
+	text-decoration:none;
+	color:white;
 }
