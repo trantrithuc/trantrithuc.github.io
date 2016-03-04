@@ -1,0 +1,63 @@
+﻿*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+	margin: 0 auto 0 auto;
+	font-family:arial;
+	font-size:14px;
+}
+.flex-container
+{
+	display:flex;
+	flex-direction:column;
+	width:400px;
+}
+.title
+{
+	color:black;
+	font-weight:bold;
+	font-size:18px;
+	font-family:arial;
+	border-bottom:solid 2px orange;
+}
+.title-content-first
+{
+	color:#469E9F;
+	font-weight:bold;
+
+}
+.first-box-content
+{
+	height:138px;
+}
+.first-box-content img
+{
+	float:left;	
+	margin-top:10px;
+	margin-left:10px;
+	border:solid 0.5px #5e5b54;
+}
+.title-content-second
+{
+	font-style:italic;
+}
+.first-box-chat 
+{
+	background-color:#f6c756;
+	border-bottom:solid 1px white;
+}
+.first-box-chat b
+{
+	color:#469E9F;
+	font-weight:bold;
+}
