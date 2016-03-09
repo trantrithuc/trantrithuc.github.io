@@ -1,16 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -42,7 +30,7 @@ table {
 	border-spacing: 0;
 }
 
-body{		
+body {		
 	margin: auto;
 	font-family: Verdana, Arial, sans-serif;
 	color: #FFF;
@@ -50,17 +38,17 @@ body{
 	font-size: 14px;
 }
 
-header{
+header {
 	background: #2d2f35;
 	height: 110px;
 	border-bottom: 1px solid #474a51;
 }
 
-header .logo{
+header .logo {
 	padding-left: 10px;
 }
 
-.main-content{
+.main-content {
 	font: 11pt;
 	width: 100%;	
 	background: #2d2f35;
@@ -68,14 +56,14 @@ header .logo{
 	border-bottom: 1px solid #474a51;
 }
 
-.banner{
+.banner {
 	height: 300px;
-	background-image: url('images/bg_home_intro.gif');
+	background-image: url(../images/bg_home_intro.gif);
 	background-repeat: repeat-x;
 	border-bottom: 1px solid #474a51;
 }
 
-.banner .banner-text{
+.banner .banner-text {
 	width: 400px;
 	float: left;
 }
@@ -84,7 +72,7 @@ header .logo{
 	float: right;
 }
 
-.banner .banner-title{
+.banner .banner-title {
 	color: yellow;
 	font-size: 16pt;
 	padding-bottom: 10px;
@@ -97,64 +85,64 @@ header .logo{
 	text-align: center;
 }
 
-.nav .row{	
+.nav .row {	
 	padding-left: 45px;	
 }
 
-.nav .menu{
+.nav .menu {
 	width: 240px;
 	position: relative;
 	float: left;
 	padding-top: 20px;
 }
 
-.nav .menu .menu-list{
+.nav .menu .menu-list {
 	position: absolute;
 	left: 198px;
 	top: 21px;
 }
 
-.row{
+.row {
 	width: 1000px;
 	margin: auto;
 	display: block;
 	clear: both;
 }
 
-.row .title{
+.row .title {
 	height: 30px;
 	width: 100%;
 	color: yellow;
 	font-size: 16pt;
 }
 
-.row .content{
+.row .content {
 	font-size: 12px;
 }
 
-.left-content, .right-content{
+.left-content, .right-content {
 	width: 400px;
 	text-align: justify;
 }
 
-.left-content{
+.left-content {
 	float: left;
 	background-image: url('images/home_services_bg_design.gif');
 	background-repeat: no-repeat;
 	background-position: right 10px bottom -12px;
 }
 
-.right-content{
+.right-content {
 	float: right;
 	background-image: url('images/home_services_bg_marketing.gif');
 	background-repeat: no-repeat;
 }
 
-.right-content .content{
+.right-content .content {
 	margin-top: 42px;
 }
 
-footer{
+footer {
 	background: #24262a;
 	text-align: center;
 }

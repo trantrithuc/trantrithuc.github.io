@@ -1,79 +1,88 @@
-﻿.body
-{
+﻿* {
+	margin: 0;	
+	border: 1;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
 	margin: 0 auto 0 auto;
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	font-height:1.5px;
 }
 
-#outer
-{
-	width:500px;	
-	border:solid 1px #0033FF;
+#outer {
+	width: 525px;
+	border: solid 1px #0033FF;
 	
 }
-.title-player-profile
-{
-	font-weight:bold;
-	background: url('image/title_bg.gif') repeat-x bottom;
+/*Player-Profile */
+.title-player-profile {
+	font-weight: bold;
+	background-image: url(../image/title_bg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	line-height:1.5;
 }
-.img-profile
-{
-	width:100px;
+
+.img-profile {
+	width:90px;
 	float:left;
 	height:90px;
+	padding-left:10px;
 }
-.content-profile
-{
+.content-profile {
 	floaf:left;
 	width:80%;
 	height:112px;
 	overflow: scroll;
 }
-.row
-{
+/* Facts */
+.row {
 	width: 100%;
 	display: block;
 	clear: both;
 	padding-top:5px;
 	padding-bottom:5px;
 }
-.title
-{
+.title {
 	font-weight:bold;
 }
-.list-facts
-{
+.list-facts {
 	padding-left:30px;
 	line-height:.0.65;
 }
-.list-facts ul
-{
-	list-style-image: url('image/star.gif');	
+.list-facts li {
+	background-image: none;
+	list-style-image: url(../image/star.gif);
 }
-.comment-content
-{
+/* Comment */
+.comment-content {
 	background:#ECECEC;
 	font-size:14px;
 }
-.comment-by
-{
-	background: url('image/comment_bt.gif') no-repeat;
+.comment-by {
+	background: url(../image/comment_bt.gif) no-repeat;
 	padding-left:55px;
 	font-size:13px;
 }
-.comment-by a
-{
+.comment-by a {
 	color:blue;
 }
-.title-comment
-{
+.title-comment {
 	margin-top:15px;
 	font-weight:bold;
 	padding-left:200px;
 	
 }
-table,table input
-{
+/* Your comment*/
+table,table input {
 	font-size:13px;
 }
-
