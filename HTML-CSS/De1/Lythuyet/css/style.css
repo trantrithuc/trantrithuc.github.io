@@ -11,16 +11,16 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-
 body {
 	margin: 0 auto 0 auto;
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	font-height:1.5px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-height: 1.5px;
+	width:600px;
 }
 
 #outer {
-	width: 525px;
-	border: solid 1px #0033FF;
+	width: 500px;
+	border: solid 1px #0033FF;	
 	
 }
 /*Player-Profile */
@@ -29,19 +29,22 @@ body {
 	background-image: url(../image/title_bg.gif);
 	background-repeat: repeat-x;
 	background-position: bottom;
-	line-height:1.5;
+	line-height: 1.5;
+	padding-left:5px;
 }
 
 .img-profile {
-	width:90px;
-	float:left;
-	height:90px;
-	padding-left:10px;
+	width: 90px;
+	float: left;
+	height: 90px;
+	padding-left: 10px;
+	padding-right:10px;
 }
+
 .content-profile {
-	floaf:left;
-	width:80%;
-	height:112px;
+	floaf: left;
+	width: 78%;
+	height: 112px;
 	overflow: scroll;
 }
 /* Facts */
@@ -49,40 +52,47 @@ body {
 	width: 100%;
 	display: block;
 	clear: both;
-	padding-top:5px;
-	padding-bottom:5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
+
 .title {
-	font-weight:bold;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding-left: 5px;
 }
-.list-facts {
-	padding-left:30px;
-	line-height:.0.65;
-}
-.list-facts li {
-	background-image: none;
+
+.list-facts li {		
 	list-style-image: url(../image/star.gif);
+	list-style-position: inside;	
 }
 /* Comment */
 .comment-content {
-	background:#ECECEC;
-	font-size:14px;
+	background: #ECECEC;
+	font-size: 14px;
+	margin-left: 5px;
+	padding-left: 5px;
 }
 .comment-by {
 	background: url(../image/comment_bt.gif) no-repeat;
-	padding-left:55px;
-	font-size:13px;
+	padding-left: 55px;
+	font-size: 13px;
 }
 .comment-by a {
-	color:blue;
+	color: blue;
 }
 .title-comment {
-	margin-top:15px;
-	font-weight:bold;
-	padding-left:200px;
+	margin-top: 15px;
+	font-weight: bold;
+	padding-left: 200px;
 	
 }
 /* Your comment*/
 table,table input {
-	font-size:13px;
+	font-size: 13px;
+}
+.width {
+	width: 110px;
+	vertical-align: middle;
+	padding-left: 5px;
 }
