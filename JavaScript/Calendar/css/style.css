@@ -1,1 +1,36 @@
-﻿
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin:0 auto;
+	width:500px;
+	font-weight:bold;
+}
+
+#main {
+	width:500px;
+}
+
+#date-input-text {
+	font-weight:bold;
+	color:green;
+}
+
+table button {
+	width:100%;
+	background-color:purple;
+	font-weight:bold;
+	color:white;
+}
+
+table td {
+	width:50px;
+	text-align:center;
+}
+
+table option {
+	font-weight:bold;
+	color:green;
+}
