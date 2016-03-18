@@ -1,9 +1,16 @@
-﻿days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",];
+﻿/*
+Khoi tao cac gia tri can thiet
+*/
+days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",];
 months =["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 months_length = new Array("31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"); 
 var d= new Date();
 var mon = d.getMonth();
 var year = d.getYear()+1900;
+
+/*
+Tao cau truc Table va goi cac ham su li 
+*/
 function creatTable() {
 	document.write("<div id='main' style='display:none'>");
 	document.write("<TABLE BORDER ='1'>");
@@ -21,10 +28,17 @@ function creatTable() {
 	document.write("</div>");
 	setDateContent(mon,year);
 }
+
+/*
+Xuat ra cau truc Table o function creatTable
+*/
 function showTable() {
 	document.getElementById("main").style.display= "block";
 }
-	
+
+/*
+Dien vao dong thu 2 trong Table mang "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+*/
 function filldays() {
 	document.write("<TR>");
 	for (i=0;i<days.length;i++) {
@@ -34,6 +48,10 @@ function filldays() {
 	}
 	document.write("</TR>");
 }
+
+/*
+Tao the OPTION va add item  "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" vao 
+*/
 function buildMonthlist() {
 	var res="<SELECT id='ddl_month' onChange='setMonth();'>";
 	for (i = 0; i< months.length; i++) {
@@ -45,6 +63,10 @@ function buildMonthlist() {
 	res+="</SELECT>";
 	return res;
 }
+
+/*
+Tao the OPTION va add item tu 1950 den 2050 vao
+*/
 function buildYearlist() {
 	var res="<SELECT id='ddl_year' onChange='setYear();'>";	
 	for (i = 1950; i <= 2050; i++) {
@@ -56,6 +78,10 @@ function buildYearlist() {
 	res+="</SELECT>";
 	return res;
 }
+
+/*
+Tao ngay bat dau cua thang nam duoc selected.Chon color red cho ngay hien tai va color blue cho ngay khac.Nhung ngay khong co thi de trong
+*/
 function setDateContent(mon, year) {
 
 	document.getElementById("td_mon").innerHTML= buildMonthlist();
@@ -64,8 +90,12 @@ function setDateContent(mon, year) {
 	var first_date = new Date(year,mon,1);
 	var of_day = first_date.getDay();
 	console.log("Star Day:" + days[of_day]);
+
 	if (testMonth_2())
 			months_length[1]="29";	
+	else
+		months_length[1]="28";
+
 	var mon_length = months_length[mon];	
 	var check = false;
 	console.log("MONTH LENGTH OF" + months[mon] + ":" + months_length[mon]);
@@ -93,33 +123,52 @@ function setDateContent(mon, year) {
 			document.getElementById("cell" +i).innerHTML= "";
 	}
 }
+
+/*
+Xay dung function kiem tra nam nhuan.
+*/
 function testMonth_2() {
 	var m = document.getElementById("ddl_month");
 	var y = document.getElementById("ddl_year");
 	mon = m.options[m.selectedIndex].value;
-	year = parseInt(y.options[y.selectedIndex].value);
-	if (year % 4 == 0 && mon == 2)
+	year = y.options[y.selectedIndex].value;
+	if (year % 4 == 0 && mon == 1)
 		return true;
 	return false;
 }
+
+/*
+Set thang duoc chon va truyen vao setDateContent
+*/
 function setMonth() {
 	var m = document.getElementById("ddl_month");
 	mon = m.options[m.selectedIndex].value;
 	console.log("SELECTED MONTH:" + months[mon]);
 	setDateContent(mon,year);
 }
+
+/*
+Set nam duoc chon va truyen vao setDateContent
+*/
 function setYear() {
 	var y = document.getElementById("ddl_year");
 	year = y.options[y.selectedIndex].value;
 	console.log("SELECTED YEAR:" + year);
 	setDateContent(mon,year);
 }
+
+/*
+Xu li event cho the a.
+*/
 function onClickDate(a) {
 	var str = a.innerHTML + "/" + (parseInt(mon) + 1) + "/" + year;	
 	document.getElementById("date-input-text").value= str;
 	document.getElementById("main").style.display= "none";
 }
 
+/*
+Dien cac ngay vao tung o cua Table
+*/
 function fillTable() {
 	var count = 0;
 	for (i = 0;i<6;i++) {
@@ -131,6 +180,10 @@ function fillTable() {
 		document.write("</TR>");
 	}
 }
+
+/*
+Cac nut dieu khien
+*/
 function prevAction() {
 	if (mon <=11 && mon >0) {
 		mon--;
