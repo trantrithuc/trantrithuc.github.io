@@ -1,0 +1,60 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0 auto;
+	font-size:100%;
+	width:600px;	
+	line-height: 1.5;
+}
+
+.content {
+	width:700px;
+}
+.item {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width:100%;
+	position:relative;
+}
+.item .title {
+	color: green;
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	
+}
+.item input {
+	border-radius: 10px;
+	border:solid 1px green;
+	width: 200px;
+	hetght: 50px;	
+	display: inline;
+	
+}
+.item img {
+	width:20px;
+	height:20px;
+	position:absolute;
+	left:280px;
+}
+
+.item .error {
+	color: green;
+	font-weight: bold;
+	width: 200px;
+}
+.button {
+	width:600px;
+	padding-left:100px;
+	
+}
+.button a:link {
+	text-decoration: none;
+	background-color: green;
+	font-size: 20px;
+	border-radius: 5px;	
+	font-weight: bold;
+	color:white;
+}

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Form AJAX</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="js/lich.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	</head>
+	<body>
+		<form>	
+			<div class="content">
+				<div class="item">
+					<p class="title">Username :</p>
+					<input type="text" id="username"/>
+					<p id="usr-validate" class="error"></p>
+				</div>
+				<div class="item">
+					<p class="title">Password :</p>
+					<input type="password" id="password"/>
+					<p id="pas-validate" class="error"></p>
+				</div>
+				<div class="item">
+					<p class="title">Email :</p>
+					<input type="text" id="email"/>
+					<p id="ema-validate" class="error"></p>
+				</div>
+				<div class="item">
+					<p class="title">Date of Birth :</p>
+					<input type="text" id="birth" readonly="readonly" /><a href="#" id="picker-day"  onmouseover="showTable();"><img src="image/calendar.png" alt="picker"/></a></td>
+					<p id="bir-validate" class="error"></p>
+				</div>				
+			</div>	
+			
+		</form>
+				<script type="text/javascript">
+						creatTable();
+					</script>
+		<div class="button">
+				<a href="#" id="submit" onClick="submitform('php/result.php');">Submit</a>
+				<a href="#" id="reset" onClick="resetform();">Reset</a>
+			</div>
+		<p id="result">
+			</p>
+	</body>
