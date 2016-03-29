@@ -35,7 +35,12 @@ Xuat ra cau truc Table o function creatTable
 function showTable() {
 	document.getElementById("main").style.display= "block";
 }
-
+/*
+An table chon lich
+*/
+function hideTable() {
+	document.getElementById("main").style.display= "none";
+}
 /*
 Dien vao dong thu 2 trong Table mang "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
 */

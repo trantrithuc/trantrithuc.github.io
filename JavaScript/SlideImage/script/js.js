@@ -1,5 +1,8 @@
 ﻿var count = 5;
 var currentItem = 1;
+/*
+Tao cac event cho cac nut
+*/
 function prevAction() {
 	if (currentItem>1)
 		currentItem--;
@@ -8,6 +11,7 @@ function prevAction() {
 	showSlide(currentItem);
 	console.log("Prev:" + currentItem)	
 }
+
 function nextAction() {
 	if (currentItem<count)
 		currentItem++;
@@ -16,11 +20,16 @@ function nextAction() {
 	showSlide(currentItem);
 	console.log("Next:" + currentItem)
 }
+
 function onClickIndex(a){
 	var str = a.id;
 	currentItem = str.substr(5,1);
 	showSlide(currentItem);
 } 
+
+/*
+Tao event cho cac nut Index
+*/
 function showSlide(index) {
 	for(i = 1;i <= 5;i++) {
 		if (i == index) {

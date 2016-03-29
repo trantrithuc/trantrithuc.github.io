@@ -37,6 +37,13 @@ function showTable() {
 }
 
 /*
+An cau truc Table o function creatTable
+*/
+function hideTable() {
+	document.getElementById("main").style.display= "none";
+}
+
+/*
 Dien vao dong thu 2 trong Table mang "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
 */
 function filldays() {
