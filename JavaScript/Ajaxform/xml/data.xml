@@ -2,20 +2,14 @@
 <!DOCTYPE users SYSTEM "DATA.dtd">
 <users>
 	<user>
-		<username>THUC</username>
-		<password>123</password>
+		<username>trantrithuc</username>
+		<password>12345678</password>
 		<email>TRANTRITHUC@GMAIL.COM</email>
 		<birthday>23/01/1994</birthday>
-	</user>
- 	<user>
-   		<username>ADMIN</username>
-  		<password>123456</password>
-   		<email>admin@gmail.com</email>
-   		<birthday>20/01/1990</birthday>
-  	</user>
+	</user> 	
 	<user>
-   		<username>abc</username>
-  		<password>123456</password>
+   		<username>12345678</username>
+  		<password>1234568</password>
    		<email>admin@gmail.com</email>
    		<birthday>20/01/1990</birthday>
   	</user>
