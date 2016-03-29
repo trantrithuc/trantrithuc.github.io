@@ -192,6 +192,7 @@ function prevAction() {
 		mon =11;
 	setDateContent(mon,year);
 }
+
 function nextAction() {
 	if (mon >=0  && mon<11) {
 		mon++;
@@ -200,6 +201,7 @@ function nextAction() {
 		mon =0;
 	setDateContent(mon,year);
 }
+
 function prevyearAction() {	
 	var y = document.getElementById("ddl_year");
 	var m = document.getElementById("ddl_month");
@@ -211,6 +213,7 @@ function prevyearAction() {
 	mon = 0;
 	setDateContent(mon,year);
 }
+
 function nextyearAction() {	
 	var y = document.getElementById("ddl_year");
 	var m = document.getElementById("ddl_month");

@@ -1,20 +1,20 @@
 ﻿#main {
-	width:500px;
+	width: 500px;
 }
 
 table button {
-	width:100%;
-	background-color:purple;
-	font-weight:bold;
-	color:white;
+	width: 100%;
+	background-color: purple;
+	font-weight: bold;
+	color: white;
 }
 
 table td {
-	width:50px;
-	text-align:center;
+	width: 50px;
+	text-align: center;
 }
 
 table option {
-	font-weight:bold;
-	color:green;
+	font-weight: bold;
+	color: green;
 }

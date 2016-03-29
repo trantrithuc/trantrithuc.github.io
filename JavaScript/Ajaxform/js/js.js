@@ -1,18 +1,27 @@
-﻿function testLength(x) {
+﻿/*
+Test length input
+*/
+function testLength(x) {
 	if (x.length >=8)
 		return true;
 	return false;
 }
+/*
+Test input username
+*/
 function testUsername() {
 	var user = document.getElementById('username').value;
 	console.log ("Username:"+ user);
-	if (user != "" && testLength(user))	{
+	if (user != "" && testLength(user)) {
 		document.getElementById('usr-validate').innerHTML = "";
 		return true;		
 	}
 	document.getElementById('usr-validate').innerHTML = "Invalid Username";
 	return false;
 }
+/*
+Test length password
+*/
 function testPassword() {
 	var pass = document.getElementById('password').value;
 	console.log("Password:" + pass);
@@ -23,6 +32,9 @@ function testPassword() {
 	document.getElementById('pas-validate').innerHTML = "Invalid Password";
 	return false;
 }
+/*
+Test length email
+*/
 function testEmail() {
 	var email = document.getElementById ('email').value;
 	console.log ("Email:" + email);
@@ -35,6 +47,9 @@ function testEmail() {
 	document.getElementById('ema-validate').innerHTML = "Invalid Email";
 	return false;
 }
+/*
+Test length Date had picked or null
+*/
 function testDate() {
 	var d = document.getElementById('birth').value;
 	console.log ("Dat of Birth:" + d);
@@ -45,7 +60,9 @@ function testDate() {
 	document.getElementById('bir-validate').innerHTML = "Invalid Day of Birth";
 	return false;
 }
-
+/*
+Connection to server.Test data in browser and send it to server.Show result! 
+*/
 function submitform(url) {
 	if (testUsername() && testPassword () && testEmail() && testDate()) {
 	var xmlhttp;
@@ -64,7 +81,10 @@ function submitform(url) {
 	xmlhttp.send(null);
 	resetform();
 	}
-}	
+}
+/*
+Reset all form
+*/	
 function resetform() {
 	var rs="";
 	document.getElementById('username').value =rs;

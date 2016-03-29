@@ -2,22 +2,25 @@
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	margin: 0 auto;
-	font-size:100%;
-	width:550px;	
+	font-size: 100%;
+	width: 550px;	
 	line-height: 1.5;
 }
 
 .content {
-	width:550px;
+	width: 550px;
 }
+
 .item {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	width:100%;
-	position:relative;
+	width: 100%;
+	position: relative;
 }
+
 .item .title {
 	color: green;
 	float: left;
@@ -25,6 +28,7 @@ body {
 	font-weight: bold;
 	
 }
+
 .item input {
 	border-radius: 10px;
 	border: solid 1px green;
@@ -33,6 +37,7 @@ body {
 	display: inline;
 	
 }
+
 .item img {
 	width: 20px;
 	height: 20px;
@@ -46,37 +51,42 @@ body {
 	width: 200px;
 	float: right;
 }
+
 .button {
-	width:600px;
-	padding-left:100px;
+	width: 600px;
+	padding-left: 100px;
 	
 }
+
 .button a:link {
 	text-decoration: none;
 	background-color: green;
 	font-size: 20px;
 	border-radius: 5px;	
 	font-weight: bold;
-	color:white;
+	color: white;
 } 
- .button a:visited {
+
+.button a:visited {
 	text-decoration: none;
 	background-color: green;
 	font-size: 20px;
 	border-radius: 5px;	
 	font-weight: bold;
-	color:white;
+	color: white;
 }
+
 .button a:hover {
-	color:red;
+	color: red;
 }
 
 #result p {
-	color:green;
-	font-weight:bold;
+	color: green;
+	font-weight: bold;
 }
+
 #result a {
 	color:blue;
 	text-decoration: none;
-	font-size:120%;
+	font-size: 120%;
 }
