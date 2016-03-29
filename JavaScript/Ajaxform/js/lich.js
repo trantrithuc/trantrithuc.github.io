@@ -69,7 +69,7 @@ Tao the OPTION va add item tu 1950 den 2050 vao
 */
 function buildYearlist() {
 	var res="<SELECT id='ddl_year' onChange='setYear();'>";	
-	for (i = 1950; i <= 2050; i++) {
+	for (i = 1950; i <= 2016; i++) {
 		if (year==i)
 			res+="<OPTION SELECTED= 'selected' value= "+ i + ">" + i + "</OPTION>";
 		else

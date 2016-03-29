@@ -1,0 +1,6 @@
+﻿<!ELEMENT users(user+)>
+<!ELEMENT user(username,password,email,birthday)>
+<!ELEMENT username(#PCDATA)>
+<!ELEMENT password(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT birthday(#PCDATA)>

@@ -3,11 +3,12 @@
 	<head>
 	<title>Form AJAX</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	<link href="css/stylelich.css" type="text/css" rel="stylesheet"/>
 	<script type="text/javascript" src="js/lich.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
 	</head>
 	<body>
-		<form>	
+		<form method ="GET">	
 			<div class="content">
 				<div class="item">
 					<p class="title">Username :</p>
@@ -26,7 +27,7 @@
 				</div>
 				<div class="item">
 					<p class="title">Date of Birth :</p>
-					<input type="text" id="birth" readonly="readonly" /><a href="#" id="picker-day"  onmouseover="showTable();"><img src="image/calendar.png" alt="picker"/></a></td>
+					<input type="text" id="birth" readonly="readonly" /><a href="#" id="picker-day"  onClick="showTable();"><img src="image/calendar.png" alt="picker"/></a></td>
 					<p id="bir-validate" class="error"></p>
 				</div>				
 			</div>	
