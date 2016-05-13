@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>FormAjax-Jquery</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+  <script  type="text/javascript" src="js/jquery.js"></script>
+  <script  type="text/javascript" src="js/js.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+</head>
+<body> 
+<p>Check validate with username = "admin"</p>
+<form method="post" id="form_register">
+<table>
+<tr>
+	<td class="title">Username</td>
+	<td><input type="text" id="Username"/></td>
+	<td><span id="User_error"></span></td>
+</tr>
+<tr>
+	<td class="title">Password</td>
+	<td><input type="password" id="Password"/></td>
+	<td><span id="Pass_error"></span></td>
+</tr>
+<tr>
+	<td class="title">Email</td>
+	<td><input type="email" id="Email"/></td>
+	<td><span id="Email_error"></span></td>
+</tr>
+<tr>
+	<td class="title">Date of Birth</td>
+	<td><input type="text" id="datepicker"></td>
+	<td><span id="Date_error"></span></td>
+</tr>
+<tr>
+	<td colspan="3" class="button"><a href="#" id="submit">Submit</a>
+	<a href="#" id="reset">Reset</a></td>
+</tr>
+</table>			
+</form>
+<p id="result"></p>
+</body>
+</html>

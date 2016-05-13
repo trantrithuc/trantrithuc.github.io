@@ -1,0 +1,45 @@
+body {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 0 auto;
+	width: 600px;
+}
+table {
+	width: 600px;
+}
+table td.title {
+	width: 150px;
+	color: green;
+	font-weight: bold;
+	text-align: right;
+}
+table td input {
+	width: 200px;
+	border-radius: 5px;
+	border:solid 1px green;
+}
+table td.button {
+	padding-left: 150px;
+}
+table td a:link {
+	padding:0 10px 0 10px;
+	text-decoration: none;
+	color: green;
+	font-weight: bold;
+	font-size: 20px;
+}
+table td a:visited {
+	text-decoration: none;
+	color: green;
+	font-weight: bold;
+}
+table td span {
+	color: green;
+	font-weight: bold;
+	font-size: 12px;
+}
+p#result {
+	font-weight: bold;
+	color: blue;
+	text-align: center;
+}
