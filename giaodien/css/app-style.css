@@ -1,0 +1,58 @@
+.footer-site{
+background: url("../images/footer.png") repeat;
+}
+.footer-site .footer{
+padding-left: 3.75rem;
+color:#aeaeae;
+padding-top: 1.875rem;
+width: 100%;
+float: left;
+padding-bottom: 35px;
+}
+.footer-site .footer h5{
+font-size: 21px;
+}
+.footer-site .footer .list_menu{
+list-style: none;
+padding-left: 0px;
+margin-bottom: 0px;
+}
+.footer-site .footer .list_menu li{
+list-style: none;
+}
+.footer-site .footer .list_menu li a{
+color: #8b8b8b;
+}
+.footer-site .footer .social ul{
+padding-left: 0px;
+}
+.footer-site .footer .social ul li{
+background: #696b6a ;
+border-radius: 100%;
+float: left;
+height: 54px;
+width: 54px;
+list-style: none outside none;
+}
+.footer-site .footer .social ul li a{
+text-align: center;
+vertical-align: middle;
+line-height: 52px;
+font-size: 26px;
+display: block;
+color:#252825;
+}
+.footer-site .footer .social ul li.twitter{
+margin-left: 24px;
+margin-right: 12px;
+}
+.footer-site .footer .social ul li.dribbble{
+margin-left: 12px;
+margin-right: 24px;
+}
+.footer-site .footer .social ul li a span{
+display: none;
+}
+.footer-site .footer .coppyright{
+padding-top: 30px;
+}
