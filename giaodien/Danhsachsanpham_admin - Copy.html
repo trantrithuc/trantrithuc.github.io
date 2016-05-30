@@ -32,11 +32,11 @@ body {
 
                   <ul class="nav navbar-nav">
         <li><a href="index.html">Trang Chủ</a></li>
-        <li class="active"><a href="listsanpham.html">Sản Phẩm</a></li>
+        <li class="active"><a href="#">Sản Phẩm</a></li>
         <li><a href="#contact">Khuyến Mãi</a></li>
         <li><a href="#contact">Tin Tức</a></li>
         <li><a href="#contact">Liên Hệ</a></li>
-        <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Đăng kí</button></li>
+        <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Thêm</button></li>
       </ul>
           <form class="navbar-form navbar-right" role="form">
         <div class="form-group">
@@ -82,27 +82,109 @@ body {
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu</button>
           </p>
-          <div class="well"><p class="text-left" style="font-size: 200%;">Title</p></div>
+          <div class="well"><p class="text-left" style="font-size: 200%;">Quản Lí Sản Phẩm</p></div>
           <div class="row">
           <!--Edit region-->
             <div class="col-6 col-sm-6 col-md-12">
+              <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="active"><a href="#home" role="tab" data-toggle="tab">Danh sách sản phẩm</a></li>
+                  <li><a href="#profile" role="tab" data-toggle="tab">Chi tiết sản phẩm</a></li>
+                  <li><a href="#messages" role="tab" data-toggle="tab">Danh sách khuyến mãi</a></li>
+                  <li><a href="#settings" role="tab" data-toggle="tab">Danh sách hết hàng</a></li>
+                </ul>
 
-              
-            </div>           
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home">
+                    <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <!-- Table -->
+                    <table class="table">
+                       <!-- Table -->      
+                      <thead>
+                        <tr>
+                          <th>Stt</th>
+                          <th>Id_SanPham</th>
+                          <th>Tên</th>
+                          <th>Hình</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>A01</td>
+                          <td>Áo tay dài</td>
+                          <td>aotaydai.jpg</td>
+                          <td>Sửa | Xóa</td>
+                        </tr>
+                         <tr>
+                          <td>2</td>
+                          <td>A01</td>
+                          <td>Áo tay dài</td>
+                          <td>aotaydai.jpg</td>
+                          <td>Sửa | Xóa</td>
+                        </tr>
+                        <tr>
+                         <tr>
+                          <td>3</td>
+                          <td>A01</td>
+                          <td>Áo tay dài</td>
+                          <td>aotaydai.jpg</td>
+                          <td>Sửa | Xóa</td>
+                        </tr>
+                      </tbody>      
+                    </table>
+                  </div>
+                  </div>
+                  <div class="tab-pane" id="profile">
+                    <form>
+                    <div class="col-md-4"> 
+                    <img src="images/logo.jpg" class="img-responsive" alt="anh san pham"/>
+                    </div>
+                      <div class="col-md-8"> 
+                        <div class="form-group">
+                            <label>ID_Sản phẩm</label>
+                            <input type="email" class="form-control" placeholder="ID_Sản phẩm">
+                        </div>
+                        <div class="form-group">
+                            <label>Tên sản phẩm</label>
+                            <input type="email" class="form-control" placeholder="Tên sản phẩm">
+                        </div>
+                        <div class="form-group">
+                            <label>Giá</label>
+                            <input type="email" class="form-control" placeholder="Giá">
+                        </div>
+                        <div class="form-group">
+                            <label>Thông tin</label>
+                            <input type="email" class="form-control" placeholder="Thông tin">
+                        </div>
+                        <div class="form-group">
+                            <label>Hình ảnh</label>
+                            <input type="email" class="form-control" placeholder="Hình ảnh">
+                        </div> 
+                      </div>       
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="messages">111111</div>
+                  <div class="tab-pane" id="settings">3333333333333</div>
+                </div>             
+                    
             </div>
             <!--End edit-->
-           <!--/row-->
+           </div><!--/row-->
         </div><!--/span-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <div class="list-group">
-            <a href="#" class="list-group-item">Áo Sơ Mi</a>
-            <a href="#" class="list-group-item">Áo Thun</a>
-            <a href="#" class="list-group-item">Quần Jean</a>
-            <a href="#" class="list-group-item">Quần Kaki</a>
-            <a href="#" class="list-group-item">Áo Khoát Jean</a>
-            <a href="#" class="list-group-item">Áo Khoát Kaki</a>
-            <a href="#" class="list-group-item">Đồ Theo Bộ</a>
+            <a href="#" class="list-group-item active">Chức năng</a>
+            <a href="#" class="list-group-item">Quản lí sản phẩm</a>
+            <a href="#" class="list-group-item">Quản lí nhân viên</a>
+            <a href="#" class="list-group-item">Quản lí khách hàng</a>
+            <a href="#" class="list-group-item">Quản lí hóa đơn</a>
+            <a href="#" class="list-group-item">Tồn kho</a>
+            <a href="#" class="list-group-item">Thoát</a>
           </div>
         </div><!--/span-->
       </div><!--/row-->
@@ -186,7 +268,7 @@ Copyright © 2016 <a href="http://vnfit.com/bootstrap/">TandT.net</a>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Đăng kí</h4>
+        <h4 class="modal-title" id="myModalLabel">Thêm sản phẩm</h4>
       </div>
       <div class="modal-body">
         <div class="container">
@@ -194,44 +276,32 @@ Copyright © 2016 <a href="http://vnfit.com/bootstrap/">TandT.net</a>
       <div class="col-md-6">        
         <form>
         <div class="form-group">
-            <label>Tên đầy đủ</label>
-            <input type="email" class="form-control" placeholder="Họ tên">
+            <label>ID_Sản phẩm</label>
+            <input type="email" class="form-control" placeholder="ID_Sản phẩm">
         </div>
         <div class="form-group">
-            <label>Số điện thoại</label>
-            <input type="email" class="form-control" placeholder="Số điện thoại">
+            <label>Tên sản phẩm</label>
+            <input type="email" class="form-control" placeholder="Tên sản phẩm">
         </div>
         <div class="form-group">
-            <label>Nơi ở hiện tại</label>
-            <input type="email" class="form-control" placeholder="Địa chỉ">
+            <label>Giá</label>
+            <input type="email" class="form-control" placeholder="Giá">
         </div>
         <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" placeholder="Email">
+            <label>Thông tin</label>
+            <input type="email" class="form-control" placeholder="Thông tin">
         </div>
         <div class="form-group">
-            <label>Ngày tháng năm sinh</label>
-            <input type="email" class="form-control" placeholder=" Ngày tháng năm sinh">
-        </div>
-        <div class="form-group">
-            <label>Tên đăng nhập</label>
-            <input type="email" class="form-control" placeholder="username">
-        </div>
-        <div class="form-group">
-            <label>Mật Khẩu</label>
-            <input type="password" class="form-control" placeholder="Password">
-        </div>
-        <div class="form-group">
-            <label>Nhập lại mật khẩu</label>
-            <input type="password" class="form-control" placeholder="Password">
-        </div>
+            <label>Hình ảnh</label>
+            <input type="email" class="form-control" placeholder="Hình ảnh">
+        </div>        
     </form>
     </div>
 </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Xác nhận</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Reset</button>
+        <button type="button" class="btn btn-primary">Thêm</button>
       </div>
     </div>
 </div>

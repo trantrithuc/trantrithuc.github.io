@@ -4,7 +4,7 @@
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-			<title>Template</title>
+			<title>Giỏ hàng</title>
 			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
       <link rel="stylesheet" type="text/css" href="css/app-style.css"/>
@@ -35,7 +35,7 @@ body {
         <li class="active"><a href="listsanpham.html">Sản Phẩm</a></li>
         <li><a href="#contact">Khuyến Mãi</a></li>
         <li><a href="#contact">Tin Tức</a></li>
-        <li><a href="#contact">Liên Hệ</a></li>
+        <li><a href="lienhe.html">Liên Hệ</a></li>
         <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Đăng kí</button></li>
       </ul>
           <form class="navbar-form navbar-right" role="form">
@@ -82,12 +82,73 @@ body {
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu</button>
           </p>
-          <div class="well"><p class="text-left" style="font-size: 200%;">Title</p></div>
+          <div class="well"><p class="text-left" style="font-size: 200%;">Giỏ hàng</p></div>
           <div class="row">
           <!--Edit region-->
             <div class="col-6 col-sm-6 col-md-12">
-
-              
+              <table class="table" border="0">
+                       <!-- Table -->      
+                      
+                      <tbody>
+                      <thead>
+                        <tr>
+                          <th>Stt</th>
+                          <th>Hình ảnh</th>
+                          <th>Tên sản phẩm</th>
+                          <th>Size</th>
+                          <th>Số lượng</th>
+                          <th>Thành tiền</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                        <tr>
+                          <td>1</td>
+                          <td><img src="images/product.jpg" class="ảnh sản phẩm" alt="anh san pham" width="20%" /></td>
+                          <td>Áo Hàn Quốc</td>
+                          <td>L</td>
+                          <td>1</td>
+                          <td>1.000.000 Đ</td>
+                          <td>Sửa | Xóa</td>                          
+                        </tr>
+                         <tr>
+                          <td>2</td>
+                          <td><img src="images/product.jpg" class="ảnh sản phẩm" alt="anh san pham" width="20%" /></td>
+                          <td>Quần Hàn Quốc</td>
+                          <td>L</td>
+                          <td>1</td>
+                          <td>1.000.000 Đ</td>
+                          <td>Sửa | Xóa</td>                          
+                        </tr>                       
+                         <tr>
+                          <td>3</td>
+                          <td><img src="images/product.jpg" class="ảnh sản phẩm" alt="anh san pham" width="20%" /></td>
+                          <td>Áo Khoát Kiểu</td>
+                          <td>L</td>
+                          <td>1</td>
+                          <td>1.000.000 Đ</td>
+                          <td>Sửa | Xóa</td>                          
+                        </tr>
+                         <tr>
+                          <td>4</td>
+                          <td><img src="images/product.jpg" class="ảnh sản phẩm" alt="anh san pham" width="20%" /></td>
+                          <td>Áo Bó Hàn Quốc</td>
+                          <td>L</td>
+                          <td>1</td>
+                          <td>1.000.000 Đ</td>
+                          <td>Sửa | Xóa</td>                          
+                        </tr>                        
+                      </tbody>      
+                    </table>
+                    <form>
+                    <div class="form-group">
+                            <label><p class="text-right">Tổng trị giá</p></label>
+                            <input type="text" class="form-control" hidden="true">
+                        </div> 
+                    </form>
+                <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Mua</button>
+        <button type="button" class="btn btn-primary">Trang Chủ</button>
+      </div>
             </div>           
             </div>
             <!--End edit-->
